@@ -1,6 +1,6 @@
 {
   "name": "watchandbuild",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "watch your files and every change build the new files",
   "main": "index.js",
   "scripts": {
