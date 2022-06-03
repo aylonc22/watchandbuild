@@ -1,11 +1,10 @@
 {
   "name": "watchandbuild",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "watch your files and every change build the new files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir lol"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aylon Cohen",
   "license": "MIT",
