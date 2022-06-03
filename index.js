@@ -33,7 +33,7 @@ if (buildCmd) {
           if (eventType === "change" && !isIn(fileName, ignore)) {
             console.log("Building...");
             proc.exec("npm run build", (err) => {
-              Console.log("Build Finished");
+              console.log("Build Finished");
             });
           }
         }
