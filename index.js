@@ -2,6 +2,7 @@
 const fs = require("fs");
 const path = require("path");
 const proc = require("child_process");
+const { Console } = require("console");
 let buildCmd;
 try {
   buildCmd = require.main.require(process.cwd() + "\\package").scripts.build;
@@ -31,7 +32,9 @@ if (buildCmd) {
           modified = seconds;
           if (eventType === "change" && !isIn(fileName, ignore)) {
             console.log("Building...");
-            proc.exec("npm run build", (err) => {});
+            proc.exec("npm run build", (err) => {
+              Console.log("Build Finished");
+            });
           }
         }
       } catch (e) {
